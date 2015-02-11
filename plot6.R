@@ -20,7 +20,7 @@ NEIagg5 <- aggregate(NEImotor2$Emissions, list(year = NEImotor2$year, county = N
 NEIagg5$county <- recode(NEIagg5$county,"'24510'='Los Angeles County';'06037'='Baltimore City'")
 
 # Open PNG device
-png(filename='plots/plot5.png')
+png(filename='plots/plot6.png')
 
 # Make plot
 ggplot(NEIagg5, aes(x=year, y=x, fill = county)) +
